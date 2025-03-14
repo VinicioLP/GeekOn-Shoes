@@ -58,7 +58,7 @@ nav ul {
   margin-right: 1rem;
 }
 
-nav ul li {
+nav ul li a {
   color: white;
   margin-right: 1.5rem;
   cursor: pointer;
@@ -201,4 +201,8 @@ header {
     text-align: center;
     padding: 0.8rem;
   }
+}
+
+.links {
+  color: rgb(102, 0, 102);
 }
