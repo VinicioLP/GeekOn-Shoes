@@ -132,7 +132,8 @@ header {
 }
 
 .links {
-  color: rgb(148, 0, 148);
+  color: white;
+  text-decoration: none;
 }
 
 /*Main*/
