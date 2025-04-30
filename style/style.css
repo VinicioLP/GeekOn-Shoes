@@ -272,12 +272,28 @@ main {
     font-size: 1.3rem;
   }
 
-  .cols-3 {
-    gap: 0.5rem;
+  .cols {
+    display: grid;
+    justify-content: space-evenly;
+    padding: 3rem 1rem;
   }
 
-  .cols {
-    padding: 1.5rem 0.5rem;
+  .cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .cols-3 img {
+    max-width: 100%;
+  }
+
+  .cols-4 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .cols-4 img {
+    max-width: 100%;
   }
 }
 
@@ -327,10 +343,26 @@ main {
   }
 
   .cols {
+    display: grid;
+    justify-content: space-evenly;
     padding: 3rem 1rem;
   }
 
   .cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .cols-3 img {
+    max-width: 100%;
+  }
+
+  .cols-4 {
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+  }
+
+  .cols-4 img {
+    max-width: 100%;
   }
 }
