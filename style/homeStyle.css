@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 body {
@@ -333,4 +333,16 @@ main {
   .cols-3 {
     gap: 1rem;
   }
+}
+
+/*Classe para inverter a disposição dos componetes do código
+reciclado*/
+.exclusive-container {
+  color: #fff;
+  flex-direction: row-reverse;
+  padding: 5rem 1rem;
+}
+
+.exclusive-container img {
+  width: 100%;
 }
