@@ -135,6 +135,7 @@ header {
 
 .header-bottom-side-right img {
   width: 105%;
+  border-radius: 5rem;
 }
 
 .links {
@@ -227,6 +228,102 @@ main {
   font-weight: 600;
 }
 
+/*Classe para inverter a disposição dos componetes do código
+reciclado*/
+.exclusive-container {
+  color: #fff;
+  flex-direction: row-reverse;
+  padding: 5rem 1rem;
+}
+
+.exclusive-container img {
+  width: 100%;
+  padding-right: 3%;
+}
+
+/*Reviews*/
+.reviews {
+  display: flex;
+  padding: 4rem 1rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-basis: 30%;
+  box-shadow: 0px 0px 15px #afafaf;
+  padding: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.review:hover {
+  transform: translateY(-5px);
+}
+
+.review p {
+  margin: 5px 0;
+}
+
+.review p:first-child {
+  font-weight: bold;
+  font-size: 5rem;
+  color: rgb(167, 0, 167);
+  margin-top: 3rem;
+  line-height: 2rem;
+}
+
+.review p:last-child {
+  font-weight: bold;
+}
+
+/* Footer */
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8f8f8f;
+  padding: 4rem 1rem;
+  gap: 2rem;
+}
+
+.footer-logo {
+  text-align: center;
+  align-items: center;
+  width: 30%;
+}
+
+.footer-links {
+  text-align: center;
+  align-items: center;
+  width: 30%;
+}
+
+.footer-links h3 {
+  color: #fff;
+  margin-bottom: 0.8rem;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links ul li {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.copyright {
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
 /*Mobile*/
 @media (max-width: 600px) {
   .logo {
@@ -235,12 +332,6 @@ main {
 
   .menu-button {
     display: block;
-  }
-
-  .header-bottom-side {
-    flex-direction: column;
-    text-align: center;
-    padding-top: 4rem;
   }
 
   nav {
@@ -264,6 +355,12 @@ main {
     padding: 0.8rem;
   }
 
+  .header-bottom-side {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 4rem;
+  }
+
   .header-bottom-side-right img {
     width: 100%;
   }
@@ -272,12 +369,41 @@ main {
     font-size: 1.3rem;
   }
 
+  .exclusive-container {
+    flex-direction: column-reverse;
+  }
+
+  .exclusive-container img {
+    padding-bottom: 2%;
+  }
+
   .cols-3 {
     gap: 0.5rem;
   }
 
   .cols {
     padding: 1.5rem 0.5rem;
+  }
+
+  .reviews {
+    flex-direction: column;
+    padding: 2rem 0.5rem;
+  }
+  .review {
+    margin-bottom: 1.2rem;
+  }
+
+  .footer-content {
+    display: inline;
+    font-size: 1.8rem;
+  }
+
+  .footer-content > div {
+    padding: 1rem;
+  }
+
+  .copyright {
+    font-size: 0.8rem;
   }
 }
 
@@ -291,12 +417,6 @@ main {
     display: block;
   }
 
-  .header-bottom-side {
-    flex-direction: column;
-    text-align: center;
-    padding-top: 4rem;
-  }
-
   nav {
     position: absolute;
     background-color: #2c2c2c;
@@ -318,12 +438,26 @@ main {
     padding: 0.8rem;
   }
 
+  .header-bottom-side {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 4rem;
+  }
+
   .header-bottom-side-right img {
     width: 100%;
   }
 
   .header-bottom-side-left p {
     font-size: 1.3rem;
+  }
+
+  .exclusive-container {
+    flex-direction: column-reverse;
+  }
+
+  .exclusive-container img {
+    padding-bottom: 2%;
   }
 
   .cols {
@@ -333,16 +467,12 @@ main {
   .cols-3 {
     gap: 1rem;
   }
-}
 
-/*Classe para inverter a disposição dos componetes do código
-reciclado*/
-.exclusive-container {
-  color: #fff;
-  flex-direction: row-reverse;
-  padding: 5rem 1rem;
-}
-
-.exclusive-container img {
-  width: 100%;
+  .reviews {
+    flex-direction: column;
+    padding: 2rem 0.5rem;
+  }
+  .review {
+    margin-bottom: 1.2rem;
+  }
 }
