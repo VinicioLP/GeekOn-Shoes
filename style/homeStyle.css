@@ -377,7 +377,6 @@ reciclado*/
     font-size: 1.3rem;
   }
 
-<<<<<<< HEAD:style/style.css
   .cols {
     display: grid;
     justify-content: space-evenly;
@@ -400,7 +399,7 @@ reciclado*/
 
   .cols-4 img {
     max-width: 100%;
-=======
+  }
   .exclusive-container {
     flex-direction: column-reverse;
   }
@@ -420,7 +419,6 @@ reciclado*/
 
   .cols {
     padding: 1.5rem 0.5rem;
->>>>>>> 4f0bf052f57fbdf42cbe4eb7b2caf71f1725492d:style/homeStyle.css
   }
 
   .reviews {
@@ -510,7 +508,6 @@ reciclado*/
   }
 
   .cols-3 {
-<<<<<<< HEAD:style/style.css
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
   }
@@ -522,7 +519,7 @@ reciclado*/
   .cols-4 {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-=======
+
     gap: 0.5rem;
   }
 
@@ -555,7 +552,6 @@ reciclado*/
 
   .copyright {
     font-size: 0.8rem;
->>>>>>> 4f0bf052f57fbdf42cbe4eb7b2caf71f1725492d:style/homeStyle.css
   }
 
   .cols-4 img {

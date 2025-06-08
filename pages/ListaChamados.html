@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GeekOn Shoes</title>
     <link rel="stylesheet" href="../style/homeStyle.css" />
+    <link rel="stylesheet" href="../style/tabelaStyle.css" />
   </head>
   <body>
     <!--Nav Bar-->
@@ -21,7 +22,9 @@
             <li><a href="./Contatos.html" class="links">Contatos</a></li>
             <li><a href="./Conta.html" class="links">Conta</a></li>
             <li>
-              <a href="./ListaChamados.html" class="links" id="chamdos">ListaChamadados/a>
+              <a href="./ListaChamados.html" class="links" id="chamdos"
+                >ListaChamadados</a
+              >
             </li>
           </ul>
         </nav>
@@ -31,6 +34,22 @@
         </div>
       </div>
     </div>
+
+    <!--Main-->
+    <h2 style="text-align: center">Chamados</h2>
+
+    <button id="listarChamados">Listar Chamados</button>
+
+    <table id="tabelaChamados">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Mensagem</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
 
     <!--Footer-->
     <footer class="gray-background">
@@ -61,5 +80,6 @@
       </div>
     </footer>
     <script src="../script/sandwichMenu.js"></script>
+    <script src="../script/FaleConosco.js"></script>
   </body>
 </html>
